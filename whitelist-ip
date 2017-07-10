@@ -1,0 +1,1 @@
+SecRule REMOTE_ADDR "@ipMatch <ip to whitelist/range>, <another ip to whitelist" "phase:1,id:10000,pass,log,allow,ctl:ruleEngine=Off"
